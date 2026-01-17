@@ -355,6 +355,8 @@ body {
     transform: rotateX(90deg);
     animation: qrAppear 1s 6s cubic-bezier(0.22, 0.61, 0.36, 1) forwards, float 3s ease-in-out infinite 7s;
     will-change: transform;
+    display: block;
+    margin: 0 auto 1.5rem auto; /* Центрируем и добавим отступ снизу */
 }
 
 @keyframes qrAppear {
@@ -439,15 +441,23 @@ body {
     }
 
     .subtitle {
-        margin-bottom: 2rem;
+        margin-bottom: 1.5rem;
     }
 
     .qr-card {
         padding: 1.2rem;
+        margin-bottom: 1rem; /* Добавим отступ снизу */
+    }
+
+    .qr-code {
+        width: clamp(150px, 30vw, 220px);
+        height: clamp(150px, 30vw, 220px);
+        margin-bottom: 0.8rem; /* Увеличим отступ снизу */
     }
 
     .qr-description {
         font-size: 0.85rem;
+        line-height: 1.4;
     }
 
     /* Улучшенная мобильная оптимизация */
@@ -456,10 +466,12 @@ body {
     }
 
     .hero-section {
-        padding: 1rem 0 3rem 0;
+        padding: 1rem 0 2rem 0; /* Уменьшили нижний отступ */
+        align-items: flex-start; /* QR-код ближе к верху */
     }
 
     .content-wrapper {
         padding: 0 0.5rem;
+        margin-top: 2rem; /* Добавим отступ сверху */
     }
 }
