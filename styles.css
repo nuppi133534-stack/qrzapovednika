@@ -356,7 +356,7 @@ body {
     animation: qrAppear 1s 6s cubic-bezier(0.22, 0.61, 0.36, 1) forwards, float 3s ease-in-out infinite 7s;
     will-change: transform;
     display: block;
-    margin: 0 auto 1.5rem auto; /* Центрируем и добавим отступ снизу */
+    margin: 0 auto 3rem auto; /* Центрируем и добавим больший отступ снизу */
 }
 
 @keyframes qrAppear {
@@ -452,7 +452,7 @@ body {
     .qr-code {
         width: clamp(150px, 30vw, 220px);
         height: clamp(150px, 30vw, 220px);
-        margin-bottom: 0.8rem; /* Увеличим отступ снизу */
+        margin-bottom: 1.6rem; /* Увеличим отступ снизу в 2 раза */
     }
 
     .qr-description {
